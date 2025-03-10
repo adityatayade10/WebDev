@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            border:2px solid black;
+            height:100vh;
+            width: auto;
+
+        }
+        .box{
+            width: 120px;
+            height:50px;
+            background-color: aqua;
+            border: 5px solid rgb(241, 29, 29);
+            border-radius: 10px;
+            margin: 2px;
+            padding: 3px;
+            position: relative;
+            animation-name: movement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+           
+            animation-delay: 2ms;
+            animation-direction: alternate;
+            animation-timing-function:linear;
+        }
+        @keyframes movement{
+            from{
+                left: 0px;
+                top: 0px;
+            }
+            to{
+                left: 1350px;
+                top: 0px;
+            }
+        }
+        #box2{
+            width: 120px;
+            height:50px;
+            background-color: aqua;
+            border: 5px solid rgb(241, 29, 29);
+            border-radius: 10px;
+            margin: 2px;
+            padding: 5px;
+            position: relative;
+            animation-name: movement2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2ms;
+            animation-direction: alternate;
+            animation-timing-function:linear;
+        }
+        @keyframes movement2{
+            from{
+                left: 1350px;
+                top: 730px;
+            }
+            to{
+                left: 0px;
+                top: 730px;
+            }
+        }
+        #circle{
+            width: 50px;
+            height:50px;
+            background-color: aqua;
+            border: 5px solid rgb(241, 29, 29);
+            border-radius: 50%;
+            margin: 2px;
+            padding: 5px;
+            position: relative;
+            animation-name: movement3;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 2ms;
+            animation-direction: alternate;
+            animation-timing-function:ease-in-out;
+        }
+        @keyframes movement3{
+            0%{
+                left: 0px;
+                top: 50px;
+            }
+            25%{
+                left: 1150px;
+                top: 50px;
+            }
+            50%{
+                left: 0px;
+                top: 650px;
+            }
+            75%{
+                left: 1150px;
+                top: 650px;
+            }
+            100%{
+                left: 0px;
+                top: 50px;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div id="box2">
+
+        </div>
+        <div id="circle">
+
+        </div>
+    </div>
+</body>
+</html>

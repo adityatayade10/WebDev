@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+
+        <h2>Job Application</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    
+        <br><br>
+        <label for="email">Email ID:</label>
+        <input type="text" id="email">
+    
+        <br><br>
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone">
+        
+        <br><br>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume">
+
+        <br><br>
+        <label for="experience">Experience:</label>
+        <input type="number"    id="experience" min="0" max="10" step="1" placeholder="Experience in years">
+
+        <br><br>
+        <fieldset>
+            <legend>Skills</legend>
+           
+            <label for="interest1">HTML</label>
+            <input type="checkbox" id="interest1">
+    
+            <label for="interest2">CSS</label>
+            <input type="checkbox" id="interest2">
+    
+            <label for="interest3">JavaScript</label>
+            <input type="checkbox" id="interest3">
+
+        </fieldset>
+
+        <br>
+        <label for="education">Higher Education:</label>
+        <select name="education" id="education">
+            <option value="1">B.Tech</option>
+            <option value="2">M.Tech</option>
+            <option value="3">PhD</option>
+            <option value="4">B.Sc</option>
+        </select>
+
+        <br><br>
+        <fieldset>
+            <legend>Availability</legend>
+
+            <label for="fulltime">Full TIme</label>
+            <input type="radio" id="fulltime" name="availability">
+
+            <br>
+            <label for="parttime">Part Time</label>
+            <input type="radio" id="parttime" name="availability">
+
+        </fieldset>
+        <br>
+        <label for="comments">Additional Comments:</label>
+        <input type="textarea"  id="comments" placeholder="Enter your comments here...">
+
+        <br><br>
+
+        <input type="button" value="Submit Application">
+    </form>
+    
+</body>
+</html>

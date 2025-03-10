@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            height:100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card
+        {
+            background-color: white;
+            height:750px;
+            width:450px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:5%;
+        }
+        .card img
+        {
+            height: 30%;
+            width: 100%;
+            border-radius: 20px;
+            
+        }
+        .textbox
+        {
+            width:70%;
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .textbox p{
+            font-size: 1.3rem;
+            font-style: normal;
+
+        }
+        .textbox h2{
+            font-size: 2rem;
+            font-style: normal;
+            color: #c00cb4;
+        }
+        .amountBox
+        {
+            width:85%;
+            height:77px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: #f71317;
+            background-image: linear-gradient(180deg, #f71317 0%, #ff080a 50%, #FF0000 100%);
+
+
+
+        }
+        .paymentBox
+        {
+            width:85%;
+            height:77px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: #000de9;
+            background-image: linear-gradient(160deg, #000de9 0%, #1a10a5 100%);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+        }
+        .cancelBox
+        {
+            width:85%;
+            height:77px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cancelBox a
+        {
+            text-decoration: none;
+            color: gray;
+            font-size: 2rem;
+            font-style: normal;
+           font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .paymentBox p{
+            font-size:2rem;
+            color:red;
+            
+        }
+        .amountBox .right
+        {
+            margin-left: auto;
+            padding: 10px;
+            
+        }
+        .amountBox .right a{
+            font-size: 1.5rem;
+        }
+        .amountBox .left{
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-between;
+            gap:10px;
+            height:100%;
+        }
+        .amountBox .left .image img{
+            height: 50px;
+            width: 50px;
+            
+        }
+        .amountBox .left .text p{
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="t1.jpg" alt="technology">
+           <div class="textbox">
+            <h2>Order Summary</h2>
+            <p>
+                He will be the hero of the film Pirates of Kwnatid 4.
+                He is a very talented actor and has a huge fan following.  
+            </p>
+           </div>
+           <div class="amountBox">
+                <div class="left">
+                    <div class="image">
+                        <img src="a2.png" alt="Amount">
+                    </div>
+                    <div class="text">
+                        <p>Amount</p>
+                        <p>Rs. 500</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#">Change</a>
+                </div>
+           </div>
+           <div class="paymentBox">
+                <p>Proceed to Payment</p>
+           </div>
+           <div class="cancelBox">
+                <a href="#">Cancel Order</a>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

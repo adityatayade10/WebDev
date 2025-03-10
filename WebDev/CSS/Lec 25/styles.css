@@ -1,0 +1,28 @@
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.box
+{
+    width: 300px;
+    height: 300px;
+    background-color: #e91c1c;
+    border-radius: 5px;
+    padding: 20px;
+    
+    transition: all 2s linear 1s;
+}
+p
+{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+}
+.box:hover{
+    transform: scale(2);
+}

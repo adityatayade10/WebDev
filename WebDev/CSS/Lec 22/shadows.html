@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --shadow: 10px 10px 20px black;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            border:2px solid black;
+            height:50vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(232, 100, 131);
+            width: 300px;
+            height:300px;
+            margin: 3px;
+            padding: 2px;
+            overflow: auto;
+            padding: 5px;
+            box-shadow: var(--shadow);
+           
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.jpg" alt="logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora eum maxime inventore, odit velit odio perspiciatis officia veniam nulla id esse assumenda nam iste, ipsam quae excepturi iure? Odio temporibus deserunt adipisci magnam nobis quod soluta iusto nam consequatur, minus repudiandae accusantium officiis possimus officia iste, repellat nemo autem!</p>
+        </div>
+    </div>
+</body>
+</html>

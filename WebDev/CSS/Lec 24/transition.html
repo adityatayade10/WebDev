@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 200px;
+            height: 75px;
+            background-color: rgb(0, 255, 38);
+            border: 5px solid rgb(241, 29, 29);
+            border-radius: 10px;
+            margin: 2px;
+            padding: 5px;
+            position: relative;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease-in;
+            transition-delay: 2ms;
+        }
+        .box:hover
+        {
+            width: 300px;
+            height: 100px;
+            background-color:rgb(229, 31, 24)
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hover  here to see the transition effect
+    </div>
+</body>
+</html>
